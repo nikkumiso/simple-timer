@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5efe6" />
+    <title>Simple Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="timer-card" aria-labelledby="page-title">
+      <p class="eyebrow">FOCUS TIMER</p>
+      <h1 id="page-title">ひと息ついて、始めよう。</h1>
+
+      <section class="timer" aria-label="タイマー">
+        <div class="time" id="time" role="timer" aria-live="off">05:00</div>
+
+        <div class="presets" aria-label="時間を選択">
+          <button class="preset" data-minutes="1" type="button">1分</button>
+          <button class="preset active" data-minutes="5" type="button">5分</button>
+          <button class="preset" data-minutes="10" type="button">10分</button>
+          <button class="preset" data-minutes="25" type="button">25分</button>
+        </div>
+
+        <div class="actions">
+          <button class="button button-primary" id="start" type="button">スタート</button>
+          <button class="button button-secondary" id="reset" type="button">リセット</button>
+        </div>
+      </section>
+
+      <p class="hint" id="hint">時間を選んで、スタートを押してください。</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
